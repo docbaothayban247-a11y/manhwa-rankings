@@ -24,36 +24,131 @@
     
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-zinc-950 text-zinc-100 min-h-screen font-sans antialiased">
-    <header class="border-b border-zinc-800 bg-zinc-900/80 backdrop-blur sticky top-0 z-50">
-        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-            <a href="/" class="flex items-center gap-2 text-xl font-bold tracking-tight">
-                <span class="p-1.5 rounded-lg bg-orange-500/10 text-orange-400 border border-orange-500/20">🔥</span>
-                <span>MANHWA<span class="text-orange-400 font-extrabold">RANKINGS</span></span>
+<body class="bg-[#090a0f] text-zinc-100 min-h-screen font-sans antialiased selection:bg-orange-500 selection:text-white">
+    <!-- Top Header -->
+    <header class="border-b border-zinc-800/80 bg-zinc-950/80 backdrop-blur sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="/" class="flex items-center gap-2 text-lg font-black tracking-wider uppercase">
+                <span class="text-orange-400 font-extrabold tracking-tight">MANHWA<span class="text-white">RANKINGS</span></span>
+                <span class="text-[10px] text-zinc-500 font-mono tracking-widest uppercase border border-zinc-800 px-1.5 py-0.5 rounded">TIER LISTS</span>
             </a>
-            <div class="flex items-center gap-4 text-sm font-medium">
-                <a href="https://tooncraze.com" target="_blank" rel="noopener" class="px-4 py-2 rounded-lg bg-orange-500 hover:bg-orange-400 text-zinc-950 font-bold transition">
-                    ToonCraze Main Platform &rarr;
+            <div class="flex items-center gap-3">
+                <div class="hidden sm:flex items-center gap-1.5 px-3 py-1 rounded-full bg-orange-950/60 border border-orange-500/30 text-orange-400 text-xs font-mono">
+                    <span class="w-2 h-2 rounded-full bg-orange-400 animate-pulse"></span>
+                    <span>Cloudflare Global Anycast Edge (DR 92)</span>
+                </div>
+                <a href="https://tooncraze.com" target="_blank" rel="noopener" class="px-3.5 py-1.5 rounded-lg bg-orange-500 hover:bg-orange-400 text-zinc-950 font-bold text-xs transition">
+                    ToonCraze Portal &rarr;
                 </a>
             </div>
         </div>
     </header>
 
-    <main class="max-w-6xl mx-auto px-4 py-12">
-        <div class="text-center max-w-2xl mx-auto mb-12 space-y-3">
-            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-orange-500/10 text-orange-400 border border-orange-500/20 text-xs font-semibold">
-                🏆 Official 2026 Tier Lists &amp; Curated Picks
+    <!-- Main Container -->
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        <!-- Hero Section -->
+        <div class="text-center max-w-4xl mx-auto mb-16 space-y-4">
+            <span class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-orange-500/10 text-orange-400 border border-orange-500/20 text-[11px] font-mono uppercase tracking-widest">
+                INTERNATIONAL GRAPHIC FICTION TIER LIST & LEADERBOARD - 2026 EDITION
             </span>
-            <h1 class="text-4xl font-extrabold text-white tracking-tight">
-                Manhwa <span class="text-orange-400">Rankings</span> &amp; Top Recommendations
+            <h1 class="text-3xl sm:text-5xl font-black text-white tracking-tight leading-tight">
+                Official Manhwa Rankings, Tier Lists &amp; Top Recommendations for <span class="text-orange-400">Uncensored Webtoons</span>
             </h1>
-            <p class="text-zinc-400 text-sm">
-                Explore community ratings, official tier lists, and curated reading recommendations for 1,100+ top adult manhwa series.
+            <p class="text-zinc-400 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
+                An authoritative community-driven ranking engine evaluating artistic fidelity, pacing critiques, narrative tension, and official reader access guides.
             </p>
         </div>
 
+        <!-- 4 Feature Pillars Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-14">
+            <div class="rounded-2xl border border-zinc-800/80 bg-zinc-900/40 p-6 space-y-3 hover:border-orange-500/40 transition group">
+                <div class="w-10 h-10 rounded-xl bg-orange-500/10 text-orange-400 flex items-center justify-center text-xl">🥇</div>
+                <h3 class="font-bold text-white text-base group-hover:text-orange-400 transition">Tier S+ Masterpiece Hall</h3>
+                <p class="text-xs text-zinc-400 leading-relaxed">Top 1% highest rated graphic novels evaluated by global webtoon critics for unmatched art and story depth.</p>
+            </div>
+            <div class="rounded-2xl border border-zinc-800/80 bg-zinc-900/40 p-6 space-y-3 hover:border-orange-500/40 transition group">
+                <div class="w-10 h-10 rounded-xl bg-orange-500/10 text-orange-400 flex items-center justify-center text-xl">🎯</div>
+                <h3 class="font-bold text-white text-base group-hover:text-orange-400 transition">Intelligent Recommendations</h3>
+                <p class="text-xs text-zinc-400 leading-relaxed">Dynamic companion series suggestions matching exact genre tones, romantic pacing, and uncensored tropes.</p>
+            </div>
+            <div class="rounded-2xl border border-zinc-800/80 bg-zinc-900/40 p-6 space-y-3 hover:border-orange-500/40 transition group">
+                <div class="w-10 h-10 rounded-xl bg-orange-500/10 text-orange-400 flex items-center justify-center text-xl">👥</div>
+                <h3 class="font-bold text-white text-base group-hover:text-orange-400 transition">Verified Community Scores</h3>
+                <p class="text-xs text-zinc-400 leading-relaxed">Weighted audience reviews, chapter engagement metrics, and authentic reader satisfaction ratings.</p>
+            </div>
+            <div class="rounded-2xl border border-zinc-800/80 bg-zinc-900/40 p-6 space-y-3 hover:border-orange-500/40 transition group">
+                <div class="w-10 h-10 rounded-xl bg-orange-500/10 text-orange-400 flex items-center justify-center text-xl">🛡️</div>
+                <h3 class="font-bold text-white text-base group-hover:text-orange-400 transition">Verified Reader Safety</h3>
+                <p class="text-xs text-zinc-400 leading-relaxed">Auditing official portal speed, cloud edge CDN performance, malware protection, and zero intrusive ads.</p>
+            </div>
+        </div>
+
+        <!-- Platform Benchmark Callout Banner -->
+        <div class="rounded-2xl border border-orange-500/30 bg-gradient-to-r from-orange-950/40 via-zinc-900 to-zinc-900/80 p-6 sm:p-8 mb-14 flex flex-col md:flex-row items-center justify-between gap-6 shadow-2xl relative overflow-hidden">
+            <div class="space-y-2 text-center md:text-left">
+                <span class="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-orange-500/20 text-orange-300 text-[11px] font-mono uppercase tracking-wider">
+                    ⭐ PLATFORM BENCHMARK OF THE YEAR 2026
+                </span>
+                <h2 class="text-xl sm:text-2xl font-black text-white">ToonCraze (tooncraze.com) - The #1 Uncensored Manhwa Reader</h2>
+                <p class="text-xs sm:text-sm text-zinc-400 max-w-xl">
+                    Official streaming partner featuring 1,880+ uncompressed adult webtoons, instant chapter updates, and ultra-fast edge CDN servers.
+                </p>
+            </div>
+            <a href="https://tooncraze.com" target="_blank" rel="noopener" class="px-6 py-3 rounded-xl bg-orange-500 hover:bg-orange-400 text-zinc-950 font-extrabold text-sm tracking-wide transition shadow-lg shadow-orange-500/20 whitespace-nowrap">
+                ENTER TOONCRAZE &rarr;
+            </a>
+        </div>
+
+        <!-- Series Grid Section Header -->
+        <div class="flex items-center justify-between mb-6 pb-3 border-b border-zinc-800/80">
+            <h2 class="text-xl font-bold text-white flex items-center gap-2">
+                <span class="text-orange-400">🔥</span> Official 2026 Tier Lists &amp; Leaderboards
+            </h2>
+            <span class="text-xs text-zinc-500 font-mono">1832+ Series Ranked</span>
+        </div>
+
+        <!-- Grid of Cards -->
         <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
             
+        <div class="rounded-xl border border-zinc-800/80 bg-zinc-900/60 overflow-hidden hover:border-orange-500/50 transition group flex flex-col">
+            <a href="/capitalist-harem.html" class="block aspect-[3/4] overflow-hidden relative bg-zinc-900">
+                <img src="https://img.tooncraze.com/covers/capitalist-harem.webp" alt="Capitalist Harem" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy" onerror="this.onerror=null; this.src='https://img.tooncraze.com/logo.webp';">
+                <div class="absolute top-2 right-2 px-2 py-0.5 rounded bg-orange-500 text-zinc-950 font-bold text-[10px] uppercase">Rank S+</div>
+            </a>
+            <div class="p-3 flex-1 flex flex-col justify-between">
+                <h3 class="font-bold text-sm text-white line-clamp-1 group-hover:text-orange-400 transition">Capitalist Harem</h3>
+                <div class="mt-2 flex items-center justify-between text-xs text-zinc-400">
+                    <a href="/capitalist-harem.html" class="text-orange-400 hover:underline">View Rank &rarr;</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="rounded-xl border border-zinc-800/80 bg-zinc-900/60 overflow-hidden hover:border-orange-500/50 transition group flex flex-col">
+            <a href="/believe-me-i-offer-you-my-first.html" class="block aspect-[3/4] overflow-hidden relative bg-zinc-900">
+                <img src="https://img.tooncraze.com/covers/believe-me-i-offer-you-my-first.webp" alt="Believe Me! I Offer You My First" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy" onerror="this.onerror=null; this.src='https://img.tooncraze.com/logo.webp';">
+                <div class="absolute top-2 right-2 px-2 py-0.5 rounded bg-orange-500 text-zinc-950 font-bold text-[10px] uppercase">Rank S+</div>
+            </a>
+            <div class="p-3 flex-1 flex flex-col justify-between">
+                <h3 class="font-bold text-sm text-white line-clamp-1 group-hover:text-orange-400 transition">Believe Me! I Offer You My First</h3>
+                <div class="mt-2 flex items-center justify-between text-xs text-zinc-400">
+                    <a href="/believe-me-i-offer-you-my-first.html" class="text-orange-400 hover:underline">View Rank &rarr;</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="rounded-xl border border-zinc-800/80 bg-zinc-900/60 overflow-hidden hover:border-orange-500/50 transition group flex flex-col">
+            <a href="/wireless-onahole.html" class="block aspect-[3/4] overflow-hidden relative bg-zinc-900">
+                <img src="https://img.tooncraze.com/covers/wireless-onahole.webp" alt="Wireless Onahole" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy" onerror="this.onerror=null; this.src='https://img.tooncraze.com/logo.webp';">
+                <div class="absolute top-2 right-2 px-2 py-0.5 rounded bg-orange-500 text-zinc-950 font-bold text-[10px] uppercase">Rank S+</div>
+            </a>
+            <div class="p-3 flex-1 flex flex-col justify-between">
+                <h3 class="font-bold text-sm text-white line-clamp-1 group-hover:text-orange-400 transition">Wireless Onahole</h3>
+                <div class="mt-2 flex items-center justify-between text-xs text-zinc-400">
+                    <a href="/wireless-onahole.html" class="text-orange-400 hover:underline">View Rank &rarr;</a>
+                </div>
+            </div>
+        </div>
+        
         <div class="rounded-xl border border-zinc-800/80 bg-zinc-900/60 overflow-hidden hover:border-orange-500/50 transition group flex flex-col">
             <a href="/return-of-the-frozen-player.html" class="block aspect-[3/4] overflow-hidden relative bg-zinc-900">
                 <img src="https://img.tooncraze.com/covers/return-of-the-frozen-player.webp" alt="Return of the Frozen Player" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy" onerror="this.onerror=null; this.src='https://img.tooncraze.com/logo.webp';">
@@ -1575,50 +1670,21 @@
             </div>
         </div>
         
-        <div class="rounded-xl border border-zinc-800/80 bg-zinc-900/60 overflow-hidden hover:border-orange-500/50 transition group flex flex-col">
-            <a href="/return-of-the-apocalypse-class-death-knight.html" class="block aspect-[3/4] overflow-hidden relative bg-zinc-900">
-                <img src="https://img.tooncraze.com/covers/return-of-the-apocalypse-class-death-knight.webp" alt="Return of the Apocalypse-Class Death Knight" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy" onerror="this.onerror=null; this.src='https://img.tooncraze.com/logo.webp';">
-                <div class="absolute top-2 right-2 px-2 py-0.5 rounded bg-orange-500 text-zinc-950 font-bold text-[10px] uppercase">Rank S+</div>
-            </a>
-            <div class="p-3 flex-1 flex flex-col justify-between">
-                <h3 class="font-bold text-sm text-white line-clamp-1 group-hover:text-orange-400 transition">Return of the Apocalypse-Class Death Knight</h3>
-                <div class="mt-2 flex items-center justify-between text-xs text-zinc-400">
-                    <a href="/return-of-the-apocalypse-class-death-knight.html" class="text-orange-400 hover:underline">View Rank &rarr;</a>
-                </div>
-            </div>
-        </div>
-        
-        <div class="rounded-xl border border-zinc-800/80 bg-zinc-900/60 overflow-hidden hover:border-orange-500/50 transition group flex flex-col">
-            <a href="/lewd-theater.html" class="block aspect-[3/4] overflow-hidden relative bg-zinc-900">
-                <img src="https://img.tooncraze.com/covers/lewd-theater.webp" alt="Lewd Theater" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy" onerror="this.onerror=null; this.src='https://img.tooncraze.com/logo.webp';">
-                <div class="absolute top-2 right-2 px-2 py-0.5 rounded bg-orange-500 text-zinc-950 font-bold text-[10px] uppercase">Rank S+</div>
-            </a>
-            <div class="p-3 flex-1 flex flex-col justify-between">
-                <h3 class="font-bold text-sm text-white line-clamp-1 group-hover:text-orange-400 transition">Lewd Theater</h3>
-                <div class="mt-2 flex items-center justify-between text-xs text-zinc-400">
-                    <a href="/lewd-theater.html" class="text-orange-400 hover:underline">View Rank &rarr;</a>
-                </div>
-            </div>
-        </div>
-        
-        <div class="rounded-xl border border-zinc-800/80 bg-zinc-900/60 overflow-hidden hover:border-orange-500/50 transition group flex flex-col">
-            <a href="/new-town-massage.html" class="block aspect-[3/4] overflow-hidden relative bg-zinc-900">
-                <img src="https://img.tooncraze.com/covers/new-town-massage.webp" alt="New Town Massage" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy" onerror="this.onerror=null; this.src='https://img.tooncraze.com/logo.webp';">
-                <div class="absolute top-2 right-2 px-2 py-0.5 rounded bg-orange-500 text-zinc-950 font-bold text-[10px] uppercase">Rank S+</div>
-            </a>
-            <div class="p-3 flex-1 flex flex-col justify-between">
-                <h3 class="font-bold text-sm text-white line-clamp-1 group-hover:text-orange-400 transition">New Town Massage</h3>
-                <div class="mt-2 flex items-center justify-between text-xs text-zinc-400">
-                    <a href="/new-town-massage.html" class="text-orange-400 hover:underline">View Rank &rarr;</a>
-                </div>
-            </div>
-        </div>
-        
         </div>
     </main>
 
-    <footer class="border-t border-zinc-800 bg-zinc-950 py-10 mt-16 text-xs text-zinc-500 text-center">
-        <p>&copy; 2026 Manhwa Rankings Hub. Strategic Partner of <a href="https://tooncraze.com" class="text-orange-400">ToonCraze.com</a></p>
+    <!-- Global Rich Footer -->
+    <footer class="border-t border-zinc-800/80 bg-zinc-950 py-12 mt-20 text-xs text-zinc-500">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex flex-wrap items-center justify-center gap-6 text-zinc-400">
+                <a href="https://tooncraze.com" class="hover:text-orange-400 transition font-medium">ToonCraze.com Official</a>
+                <a href="https://docbaothayban247-a11y.github.io/manhwa-reviews/" class="hover:text-orange-400 transition">Critic Reviews (GitHub)</a>
+                <a href="https://tooncraze-reviews.s3.ap-southeast-2.amazonaws.com/index.html" class="hover:text-orange-400 transition">Podcast Radio (AWS S3)</a>
+                <a href="https://manhwa-spoilers.vercel.app/" class="hover:text-orange-400 transition">Manhwa Spoilers (Vercel)</a>
+                <a href="https://manhwa-wiki.netlify.app/" class="hover:text-orange-400 transition">Manhwa Wiki (Netlify)</a>
+            </div>
+            <p>&copy; 2026 Manhwa Rankings Hub &bull; Hosted on Cloudflare Pages (DR 92)</p>
+        </div>
     </footer>
 </body>
 </html>
