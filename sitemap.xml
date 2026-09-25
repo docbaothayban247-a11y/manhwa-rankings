@@ -11,6 +11,11 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://manhwa-rankings.pages.dev/sneak-peek.html</loc>
+    <lastmod>2026-08-21</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://manhwa-rankings.pages.dev/the-client-manhwa-taira.html</loc>
     <lastmod>2026-08-21</lastmod>
     <priority>0.8</priority>
@@ -4532,11 +4537,6 @@
   </url>
   <url>
     <loc>https://manhwa-rankings.pages.dev/god-of-app-manhwa.html</loc>
-    <lastmod>2026-08-21</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://manhwa-rankings.pages.dev/sneak-peek.html</loc>
     <lastmod>2026-08-21</lastmod>
     <priority>0.8</priority>
   </url>
