@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="flameG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fb923c"/>
+      <stop offset="50%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#e11d48"/>
+    </linearGradient>
+    <filter id="glowF">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="100" height="100" rx="24" fill="#09090b" stroke="#f97316" stroke-opacity="0.3" stroke-width="3"/>
+  <!-- Glowing Flame -->
+  <path d="M50 15 C52 28, 68 38, 68 55 C68 70, 58 82, 48 84 C62 76, 60 62, 54 54 C50 48, 42 42, 42 34 C36 42, 32 52, 32 64 C32 78, 42 85, 50 85 C38 85, 26 74, 26 58 C26 38, 44 24, 50 15 Z" fill="url(#flameG)" filter="url(#glowF)"/>
+</svg>
